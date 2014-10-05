@@ -7,7 +7,7 @@ from flask import Flask, redirect, request, render_template, session
 
 PORT = 5000
 APP_ID = "cf117f358f5e6161acfa972c7ed17a3c"
-REDIRECT_URL = "http://localhost:5000/auth"
+REDIRECT_URL = "http://secret-hamlet-6840.herokuapp.com/auth"
 
 app = Flask(__name__)
 app.secret_key = os.urandom(27)
