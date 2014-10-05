@@ -5,6 +5,7 @@ from urlparse import urlparse, parse_qs
 import requests
 from flask import Flask, redirect, request, render_template, session
 
+PORT = 5000
 APP_ID = "cf117f358f5e6161acfa972c7ed17a3c"
 REDIRECT_URL = "http://localhost:5000/auth"
 
@@ -151,4 +152,5 @@ def create_line(line_id, tank_id, tank_name, user_stats_req):
 	return line
 
 if __name__ == "__main__":
-	app.run()
+	port = int(os.environ.get("PORT", 5000))
+	app.run(host="0.0.0.0", port=port)

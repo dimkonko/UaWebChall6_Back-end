@@ -1,0 +1,13 @@
+1. Open terminal
+2. Run few commands:
+  $ sudo apt-get install python-virtualenv
+3. Create folder and init virtualenv
+  $ virtualenv env
+4. Move into folder
+  $ cd env/UaWebChall6_Back-end
+5. Activete enviroment 
+  $ source ../bin/activate
+6. Install modules 
+  $ pip install flask requests
+7. And finally
+  $ python run.py
