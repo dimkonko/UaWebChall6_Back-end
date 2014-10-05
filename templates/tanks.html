@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Tanks{% endblock %}
+{% block content %}
+	<h2>Task 3, 4:</h2>
+	<table>		  	
+		{% for line in users_stats %}
+		<tr>
+			{% for item in line %}
+			<td>{{ item }}</td>
+			{% endfor %}
+		</tr>
+		{% endfor %}
+	</table>
+{% endblock %}

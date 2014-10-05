@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<meta chatset="utf8" />
+		<title>{% block title %}{% endblock %}</title>
+	</head>
+	<body>
+		<style type="text/css">
+			table {
+				width: 1000px;
+			}
+			table, th, td {
+			    border: 1px solid black;
+			    border-collapse: collapse;
+			}
+			th,td {
+			    padding: 15px;
+			}
+		</style>
+		{% block header %}{% endblock %}
+		{% block content %}{% endblock %}
+	</body>
+</html>
